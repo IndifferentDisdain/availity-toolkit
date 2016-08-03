@@ -14,9 +14,9 @@ app.addModules([
   'ng.shims.placeholder'
 ]);
 
-app.config(function($urlRouterProvider, avValProvider) {
+app.config( ($urlRouterProvider, avValProvider) => {
 
-  const defaultRules = {
+  const standard = {
     name: {
       required: {
         message: 'Your name is required.'
@@ -39,7 +39,7 @@ app.config(function($urlRouterProvider, avValProvider) {
   };
 
   avValProvider.addRules({
-    'default': defaultRules
+    standard
   });
 
   $urlRouterProvider.otherwise('/');
