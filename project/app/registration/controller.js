@@ -14,6 +14,7 @@ app.config(function ($stateProvider) {
 });
 
 class RegistrationController {
+
   constructor ($scope, AvModal, AV_GLOBALS) {
     this.di = { $scope, AvModal };
     this.states = AV_GLOBALS.REGIONS;

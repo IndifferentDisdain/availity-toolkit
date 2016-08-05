@@ -15,7 +15,6 @@ import 'angular-ui-router';
 import 'angular-shims-placeholder';
 import 'angular-ui-mask';
 
-
 // availity
 import 'availity-angular';
 
