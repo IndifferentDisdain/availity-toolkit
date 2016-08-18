@@ -30,7 +30,8 @@
   ],
   "scripts": {
     "start": "av start",
-    "test": "av test",
+    "test": "cross-env NODE_ENV=testing av test",
+    "test:debug": "cross-env NODE_ENV=debug av test",
     "lint": "av lint",
     "production": "cross-env NODE_ENV=production av release",
     "staging": "cross-env NODE_ENV=staging av release",
